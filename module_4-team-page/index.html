@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <style>
+        /* Reset and Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Team Member Styling */
+        .team {
+            display: grid;
+            grid-template-columns: repeat(2, 150px); /* Two columns */
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+            row-gap: 30px;
+        }
+
+        .team-member {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            font-size: 12px;
+            padding: 10px;
+            border: 2px solid black; /* Added thin black border */
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Biography */
+        .bio {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            font-size: 10px;
+            border-radius: 5px;
+        }
+
+        /* Random background colors */
+        .team-member:nth-child(1) { background-color: #ff6f61; }
+        .team-member:nth-child(2) { background-color: #6b5b95; }
+        .team-member:nth-child(3) { background-color: #88b04b; }
+        .team-member:nth-child(4) { background-color: #f1c40f; }
+    </style>
+</head>
+<body>
+
+    <section class="team">
+        <div class="team-member">
+            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-512x511-v4sw4m29.png" alt="Team Member 1">
+            <div class="bio">Team Member 1: Loves to code!</div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-512x511-v4sw4m29.png" alt="Team Member 2">
+            <div class="bio">Team Member 2: Enjoys graphic design!</div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-512x511-v4sw4m29.png" alt="Team Member 3">
+            <div class="bio">Team Member 3: Passionate about marketing!</div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-512x511-v4sw4m29.png" alt="Team Member 4">
+            <div class="bio">Team Member 4: Loves project management!</div>
+        </div>
+    </section>
+
+</body>
+</html>
