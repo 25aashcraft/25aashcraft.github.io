@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.scorecard {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.scorecard th, .scorecard td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.scorecard th {
+    color: white;
+}
+
+.scorecard td {
+    background-color: #fafafa;
+}
+
+.scorecard tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.scorecard td:last-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.scorecard.golf th {
+    background-color: #4CAF50;
+}
+
+.scorecard.baseball th {
+    background-color: #FF5733;
+}
+
+.scorecard.bowling th {
+    background-color: #3498DB;
+}
